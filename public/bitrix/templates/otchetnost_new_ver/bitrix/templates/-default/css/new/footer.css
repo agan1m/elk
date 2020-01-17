@@ -1,0 +1,312 @@
+.footer {
+    margin-top: 45px;
+    padding-top: 45px;
+    background-color: #e1e5e7;
+}
+
+.footer ul {
+    padding-bottom: 9px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer ul:first-child {
+}
+
+.footer ul li {
+    /* padding-bottom: 14px; */
+}
+
+.footer ul li:first-child {
+    /* padding-bottom: 18px; */
+}
+
+.footer label,.footer ul li label {
+    display: block;
+    font-size: 0.8125em;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+
+.footer ul li b {
+    display: block;
+    font-size: 1.813em;
+    font-weight: 100;
+}
+
+.footer ul.ul3 li b {
+    margin-bottom: 14px;
+}
+
+.footer ul.ul3 li b:last-child {
+    margin-bottom: 0px;
+}
+
+.footer ul li a {
+    font-size: 0.9375em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #0072bc;
+}
+
+.footer .downLine {
+    padding: 14px 0;
+    background-color: #cbd0d3;
+    font-size: 0.9375em;
+    color: #646f75;
+    margin-top: 50px;
+}
+
+@media (max-width: 530px) {
+    .footer .downLine {
+        padding: 21px 0;
+        background-color: #cbd0d3;
+        font-size: 0.9375em;
+        color: #646f75;
+        margin-top: 0px;
+    }
+}
+
+.footer .downLine a {
+    color: #646f75;
+}
+
+.footer .downLine .lft {
+    float: left;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.footer .downLine .rht {
+    float: right;
+    display: inline-block;
+}
+
+.footer .downLine .rht a {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.footer .downLine .rht a:hover {
+    color: #000000;
+}
+
+.footer .downLine .sprtr.vert {
+    display: inline;
+    border-left: 1px solid #b5b5b5;
+    padding: 2px 0;
+    margin: 0 19px;
+}
+
+.footer .soc-ico {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer ul.soc-ico li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.footer .soc-ico li a {
+    display: block;
+    width: 36px;
+    height: 35px;
+    background: url("img/soc-ico.png") 0px 0px no-repeat transparent;
+}
+
+.footer .soc-ico li .yt {
+    background-position: 0px 0px;
+}
+
+.footer .soc-ico li .yt:hover {
+    background-position: 0px -35px;
+}
+
+.footer .soc-ico li .ig {
+    background-position: -36px 0px;
+}
+
+.footer .soc-ico li .ig:hover {
+    background-position: -36px -35px;
+}
+
+.footer .soc-ico li .vk {
+    background-position: -72px 0px;
+}
+
+.footer .soc-ico li .vk:hover {
+    background-position: -72px -35px;
+}
+
+.footer .soc-ico li .fb {
+    background-position: -108px 0px;
+}
+
+.footer .soc-ico li .fb:hover {
+    background-position: -108px -35px;
+}
+
+.footer .soc-ico li .tw {
+    background-position: -144px 0px;
+}
+
+.footer .soc-ico li .tw:hover {
+    background-position: -144px -35px;
+}
+
+.footer .soc-ico li .ok {
+    background-position: -181px 0px;
+}
+
+.footer .soc-ico li .ok:hover {
+    background-position: -181px -35px;
+}
+
+.footer .soc-ico li .gl {
+    background-position: -216px 0px;
+}
+
+.footer .soc-ico li .gl:hover {
+    background-position: -216px -35px;
+}
+
+.footer .soc-ico li .rs {
+    background-position: -252px 0px;
+}
+
+.footer .soc-ico li .rs:hover {
+    background-position: -252px -35px;
+}
+
+.footer .soc-ico li .em {
+    background-position: -288px 0px;
+}
+
+.footer .soc-ico li .em:hover {
+    background-position: -288px -35px;
+}
+
+.footer .soc-ico li .kr {
+    background-position: -324px 0px;
+}
+
+.footer .soc-ico li .kr:hover {
+    background-position: -324px -35px;
+}
+
+.footer .find_err {
+    display: block;
+    font-size: 11px;
+    line-height: normal;
+}
+
+/* mistake */
+.mistake {
+    font-family: "Open Sans", serif;
+}
+
+.mistake .mistake_form {
+}
+
+.mistake .mistake_form h3 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #444444;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.mistake .mistake_form h2 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #444444;
+    margin-bottom: 33px;
+    text-transform: none;
+}
+
+.mistake .mistake_form .notice {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #444444;
+    margin-bottom: 17px;
+}
+
+.mistake .mistake_form textarea {
+    display: block;
+    width: 530px;
+    border: 1px solid #a0acb2;
+    padding: 18px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.mistake .mistake_form textarea:disabled {
+    background: #ffffff;
+}
+
+.mistake .mistake_form textarea.err {
+    border: 1px solid #ff6f28;
+}
+
+.mistake .mistake_form .ta_first {
+}
+
+.mistake .mistake_form .ta_second {
+}
+
+.mistake .mistake_form #mistake_submit {
+    font-size: 14px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #0072bc;
+    padding: 0 26px;
+    margin-top: 33px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mistake .mistake_form #mistake_submit:disabled {
+    background-color: #92a3ae;
+}
+
+.mistake .mistake_form #err_txt {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 21px;
+    color: #ff6f28;
+    vertical-align: bottom;
+    margin-left: 36px;
+}
+
+@media (max-width: 760px) {
+    .footer ul.ul1 {
+        border-bottom: 1px solid #c6cfd6;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .footer .downLine {
+        padding: 21px 0;
+        background-color: #cbd0d3;
+        font-size: 0.9375em;
+        color: #646f75;
+        margin-top: 10px;
+    }
+}

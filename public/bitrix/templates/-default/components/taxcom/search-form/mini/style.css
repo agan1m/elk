@@ -1,0 +1,101 @@
+.search-form-mini {
+    display: inline-block;
+	background: transparent;
+    height: 31px;
+    border: none;
+    border-bottom: 1px solid #228acd;
+    width: 155px;
+    margin-left: 15px;
+}
+.search-form-mini input[type="text"] {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 21px;
+    color: #000000;
+    border: none;
+    width: 127px;
+    height: 29px;
+    background: transparent;
+    outline: none;
+    float: left;
+}
+.search-form-mini input[type="text"]::-webkit-input-placeholder {
+    color: #228acd;
+}
+.search-form-mini input[type="text"]::-moz-placeholder {
+    color: #228acd;
+}
+.search-form-mini input[type="text"]:-moz-placeholder {
+    color: #228acd;
+}
+.search-form-mini input[type="text"]:-ms-input-placeholder {
+    color: #228acd;
+}
+.search-form-mini input[type="submit"] {
+    display: inline-block;
+    border: none;
+    background: url("img/search_box_icon.png") 15px 8px no-repeat transparent;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: -6px;
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    cursor: pointer;
+    outline: none;
+    float: right;
+    box-sizing: content-box;
+}
+
+
+@media (max-width: 768px) {
+
+    .search-form-mini {
+        display: inline-block;
+        background: transparent;
+        height: 22px;
+        border: none;
+        border-bottom: 1px solid #228acd;
+        width: auto;
+        margin-left: 15px;
+    }
+    .search-form-mini input[type="text"] {
+        display: inline-block;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        line-height: 21px;
+        color: #000000;
+        border: none;
+        width: 70px;
+        height: 22px;
+        background: transparent;
+        outline: none;
+        float: left;
+    }
+    .search-form-mini input[type="text"]::-webkit-input-placeholder {
+        color: #228acd;
+    }
+    .search-form-mini input[type="text"]::-moz-placeholder {
+        color: #228acd;
+    }
+    .search-form-mini input[type="text"]:-moz-placeholder {
+        color: #228acd;
+    }
+    .search-form-mini input[type="text"]:-ms-input-placeholder {
+        color: #228acd;
+    }
+    .search-form-mini input[type="submit"] {
+        display: inline-block;
+        border: none;
+        background: url("img/search_box_icon.png") 3px 3px no-repeat transparent;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: -8px;
+        width: 16px;
+        height: 16px;
+        padding: 3px;
+        cursor: pointer;
+        outline: none;
+        float: right;
+        box-sizing: content-box;
+    }
+}

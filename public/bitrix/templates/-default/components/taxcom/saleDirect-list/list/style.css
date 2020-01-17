@@ -1,0 +1,291 @@
+.sale-direct ul.menu-direct {
+    display: inline-block;
+}
+.sale-direct ul.menu-direct li {
+	position: relative;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 10px 18px 10px;
+    /* оригинальный падинг (для раздела "электронные торги")
+    padding: 10px 27px 10px;
+    */
+    text-align: center;
+    width: auto;
+}
+.sale-direct ul.menu-direct li:after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	width: 1px;
+	height: 18px;
+	display: inline-block;
+	border-right: 1px solid #c9ccd3;
+    top: 10px;
+}
+.sale-direct ul.menu-direct li:last-child:after {
+
+	border-right: none;
+}
+
+.sale-direct ul.menu-direct li .arrw {
+    display: none;
+}
+.sale-direct ul.menu-direct li.grn {
+    
+}
+.sale-direct ul.menu-direct li.grn:hover, .sale-direct ul.menu-direct li.grn.active {
+    background-color: #5fb444;
+}
+.sale-direct ul.menu-direct li.grn:hover:after, .sale-direct ul.menu-direct li.grn.active:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #5fb444;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li.grnl:hover, .sale-direct ul.menu-direct li.grnl.active {
+    background-color: #93c816;
+}
+.sale-direct ul.menu-direct li.grnl:hover:after, .sale-direct ul.menu-direct li.grnl.active:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #93c816;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li.dbl {
+    
+}
+.sale-direct ul.menu-direct li.dbl:hover, .sale-direct ul.menu-direct li.dbl.active {
+    background-color: #0071b3;
+}
+.sale-direct ul.menu-direct li.dbl.active:after, .sale-direct ul.menu-direct li.dbl:hover:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #0071b3;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li.ylw {
+    /* background: transparent url("img/colorMenu.png") no-repeat scroll right bottom; */
+}
+.sale-direct ul.menu-direct li.ylw:hover, .sale-direct ul.menu-direct li.ylw.active {
+    background-color: #ffb924;
+}
+.sale-direct ul.menu-direct li.ylw:hover:after, .sale-direct ul.menu-direct li.ylw.active:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #ffb924;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li.blu {
+    /* background: transparent url("img/colorMenu.png") no-repeat scroll right bottom; */
+}
+.sale-direct ul.menu-direct li.blu:hover, .sale-direct ul.menu-direct li.blu.active {
+    background-color: #00b3f5;
+}
+.sale-direct ul.menu-direct li.blu:hover:after, .sale-direct ul.menu-direct li.blu.active:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #00b3f5;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li.org {
+    /* background: transparent url("img/colorMenu.png") no-repeat scroll right bottom; */
+}
+.sale-direct ul.menu-direct li.org:hover, .sale-direct ul.menu-direct li.org.active {
+    background-color: #f7941d;
+}
+.sale-direct ul.menu-direct li.org:hover:after, .sale-direct ul.menu-direct li.org.active:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #f7941d;
+    border-width: 10px;
+    margin-left: -10px;
+}
+.sale-direct ul.menu-direct li a {
+    color: #252525;
+    font-size: 0.813em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.sale-direct ul.menu-direct li:hover a, .sale-direct ul.menu-direct li.active a {
+    color: #ffffff;
+}
+.sale-direct .area1 .leftSide, .sale-direct .area2 .leftSide, .sale-direct .area3 .leftSide, .sale-direct .area4 .leftSide {
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    width: 550px;
+}
+.sale-direct .area1 .leftSide .btn, .sale-direct .area2 .leftSide .btn, .sale-direct .area3 .leftSide .btn, .sale-direct .area4 .leftSide .btn {
+    margin-top: 20px;
+}
+.sale-direct .area1 .rightSide, .sale-direct .area2 .rightSide, .sale-direct .area3 .rightSide, .sale-direct .area4 .rightSide {
+    display: inline-block;
+    float: left;
+    position: relative;
+    vertical-align: top;
+    width: 390px;
+}
+.sale-direct .area1 .rightSide img, .sale-direct .area2 .rightSide img, .sale-direct .area3 .rightSide img, .sale-direct .area4 .rightSide img {
+    /* position: absolute;
+    right: -25px;
+    top: 34px; */
+    margin: 34px 0 0 25px;
+}
+.sale-direct .area1 .h2, .sale-direct .area2 .h2, .sale-direct .area3 .h2, .sale-direct .area4 .h2 {
+    font-size: 1.9375em;
+    font-weight: 100;
+    margin-bottom: 22px;
+    margin-top: 34px;
+    text-align: left;
+}
+.sale-direct .area1 h2, .sale-direct .area2 h2, .sale-direct .area3 h2, .sale-direct .area4 h2 {
+    font-size: 1.25em;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+.sale-direct .area1 .head2, .sale-direct .area2 .head2, .sale-direct .area3 .head2, .sale-direct .area4 .head2 {
+    font-size: 1.25em;
+    font-weight: 100;
+    line-height: 27px;
+}
+
+
+.sale-direct .area1 p a, .sale-direct .area2 p a, .sale-direct .area3 p a, .sale-direct .area4 p a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-left: 28px;
+	color: #0072bc;
+}
+.sale-direct .area1 ul, .sale-direct .area2 ul, .sale-direct .area3 ul, .sale-direct .area4 ul {
+    margin-bottom: 8px;
+    margin-top: 29px;
+}
+.sale-direct .area1 ul li, .sale-direct .area2 ul li, .sale-direct .area3 ul li, .sale-direct .area4 ul li {
+    background: transparent url("img/sprite.png") no-repeat scroll 0 -324px;
+    font-size: 0.9375em;
+    padding-bottom: 19px;
+    padding-left: 28px;
+}
+.sale-direct .area1 ul li a, .sale-direct .area2 ul li a, .sale-direct .area3 ul li a, .sale-direct .area4 ul li a {
+    color: #0072BC;
+    text-decoration: none;
+}
+.sale-direct .area1 ul li a:hover, .sale-direct .area2 ul li a:hover, .sale-direct .area3 ul li a:hover, .sale-direct .area4 ul li a:hover {
+    color: #0072BC;
+    text-decoration: underline;
+}
+.sale-direct .area1 ul li:last-child, .sale-direct .area2 ul li:last-child, .sale-direct .area3 ul li:last-child, .sale-direct .area4 ul li:last-child {
+    padding-bottom: 0;
+}
+.sale-direct .area2, .sale-direct .area3, .sale-direct .area4 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sale-direct {
+        display: table;
+        border: 1px solid #cecece;
+        border-radius: 5px;
+        width: 100%;
+    }
+    .sale-direct ul.menu-direct {
+        display: block;
+    }
+    .sale-direct ul.menu-direct li {
+        position: relative;
+        cursor: pointer;
+        display: block;
+        float: none;
+        padding: 10px 21px 10px;
+        text-align: center;
+        width: auto;
+    }
+    .sale-direct .area1 .leftSide, .sale-direct .area2 .leftSide, .sale-direct .area3 .leftSide, .sale-direct .area4 .leftSide {
+        display: inline-block;
+        float: left;
+        vertical-align: top;
+        width: auto;
+        padding: 15px;
+    }
+    .sale-direct .area1 .rightSide, .sale-direct .area2 .rightSide, .sale-direct .area3 .rightSide, .sale-direct .area4 .rightSide {
+        display: none;
+        float: left;
+        position: relative;
+        vertical-align: top;
+        width: auto;
+    }
+    .sale-direct .area1 .head2, .sale-direct .area2 .head2, .sale-direct .area3 .head2, .sale-direct .area4 .head2 {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 22px;
+    }
+    .sale-direct ul.menu-direct li.blu:hover:after, .sale-direct ul.menu-direct li.blu.active:after {
+        display: none;
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-top-color: #00b3f5;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    .sale-direct ul.menu-direct li:after {
+        content: "";
+        position: absolute;
+        right: 0px;
+        width: 1px;
+        height: 18px;
+        display: none;
+        border-right: 1px solid #c9ccd3;
+        top: 10px;
+    }
+}

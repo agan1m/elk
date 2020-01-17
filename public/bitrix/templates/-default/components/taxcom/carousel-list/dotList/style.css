@@ -1,0 +1,39 @@
+.feedback-clients {
+	height: 250px !important;
+}
+.feedback-clients .inner {
+	padding: 25px 30px;
+}
+.feedback-clients .swiper-slide {
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin-right: 20px;
+	margin-top: 0px;
+	width: 303px;
+	height: 210px;
+	background-color: #ffffff;
+	border-radius: 2px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.feedback-clients .swiper-slide .h2 {
+	font-size: 0.813em;
+	font-weight: 800;
+	color: #000000;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #f8941d;
+	text-transform: uppercase;
+	text-align: left;
+	line-height: initial;
+}
+.feedback-clients .swiper-slide p {
+	font-size: 13px;
+	line-height: 19px;
+	color: #333333;
+	text-align: left;
+	font-weight: 500;
+}
+.feedback-clients .swiper-slide img {
+	margin-top: 0px;
+}

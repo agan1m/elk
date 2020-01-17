@@ -1,0 +1,290 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.form-otch-connect {
+	width: auto;
+	margin: 0 auto;
+}
+
+.form-otch-connect .h2 {
+	font-style: normal;
+	font-weight: bold;
+	line-height: 46px;
+	font-size: 40px;
+	text-align: center;
+	color: #000000;
+	margin: 15px 0;
+}
+.form-otch-connect .h3 {
+	font-weight: 300;
+	line-height: 26px;
+	font-size: 18px;
+	text-align: center;
+	color: #232731;
+	margin-top: 3px;
+	margin-bottom: 13px;
+}
+.form-otch-connect ul.form_list {
+	display: table;
+	margin: 0 auto;
+	width: 100%;
+}
+.form-otch-connect ul.form_list li {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.form-otch-connect ul.form_list li.center_text {
+	display: block;
+}
+.form-otch-connect ul.form_list li .grey_text {
+	
+}
+.form-otch-connect ul.form_list li .star_important {
+	
+}
+.form-otch-connect ul.form_list li .question {
+	display: block;
+	width: 352px;
+	margin: 25px 0 15px;
+	font-size: 15px;	
+	font-weight: 600;
+	line-height: 21px;
+}
+.form-otch-connect ul.form_list li label.error {
+    font-size: 13px;
+    line-height: 16px;
+    position: absolute;
+    top: 10px;
+    right: -200px;
+    display: block;
+    width: 160px;
+}
+.form-otch-connect ul.form_list li label.error:after {
+    position: absolute;
+    top: 3px;
+    left: -80px;
+    content: "!";
+    color: #ffffff;
+    background-color: #ff8b23;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 23px;
+    font-size: 18px;
+}
+.form-otch-connect ul.form_list li label.error b {
+	display: block;
+	margin-top: 10px;
+	font-weight: 700;
+}
+.form-otch-connect ul.form_list li .input_text {
+	position: relative;
+	display: table;
+	margin: 0 auto;
+	width: 80%;
+}
+.form-otch-connect ul.form_list li .input_text input {
+	width: 100%;
+	height: 50px;
+	background: #FFFFFF;
+	border: 1px solid #CBD0D3;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border-left: 3px solid #CBCFD3;
+	padding-left: 9px;
+	outline: none;
+	transition: all 0.25s ease-out 0s;
+}
+.form-otch-connect ul.form_list li .input_text select {
+	width: 352px;
+	border: 2px solid #a0acb2;
+	border-radius: 2px;
+	padding: 10px 20px;
+	font-size: 15px;
+	color: #a0acb2;
+	outline: none;
+	transition: all 0.25s ease-out 0s;
+}
+.form-otch-connect ul.form_list li .input_text option {
+	display: block;
+	font-size: 15px;
+	line-height: 21px;
+	margin: 10px 0;
+	color: #a0acb2;
+}
+.form-otch-connect ul.form_list li .input_text textarea {
+	width: 308px;
+	border: 2px solid #a0acb2;
+	border-radius: 2px;
+	padding: 10px 20px;
+	font-size: 15px;
+	outline: none;
+	transition: all 0.25s ease-out 0s;
+}
+.form-otch-connect ul.form_list li .input_text.required:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #FE0000;
+}
+.form-otch-connect ul.form_list li .input_text input:focus, .form-otch-connect ul.form_list li .input_text select:focus, .form-otch-connect ul.form_list li .input_text textarea:focus {
+	border: 1px solid #F7941D;
+    border-left: 3px solid #F7941D;
+	/* box-shadow: 0 0px 2px 0 rgba(19, 128, 196, 0.5), 0 0px 10px 0px rgba(19, 128, 196, 0.5); */
+}
+.form-otch-connect ul.form_list li#form_text_2 .input_text input {
+	margin-bottom: 20px;
+}
+
+.form-otch-connect ul.form_list li input[type="submit"] {
+	margin-top: 20px;
+}
+
+
+.form-otch-connect input[type="radio"] {
+    display:none;
+}
+
+.form-otch-connect input[type="radio"] + label {
+	display: block;
+	margin: 10px 0;
+}
+
+.form-otch-connect input[type="radio"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:-1px 8px 0 0;
+    vertical-align:middle;
+    background:url(img/check_radio_sheet.png) -40px top no-repeat;
+    cursor:pointer;
+}
+
+.form-otch-connect input[type="radio"]:checked + label span {
+    background:url(img/check_radio_sheet.png) -60px top no-repeat;
+}
+
+.form-otch-connect input[type="checkbox"] {
+    display:none;
+}
+
+.form-otch-connect input[type="checkbox"] + label {
+	display: block;
+	margin: 10px 0;
+}
+
+.form-otch-connect input[type="checkbox"] + label span {
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:-1px 8px 0 0;
+    vertical-align:middle;
+    background:url(img/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.form-otch-connect input[type="checkbox"]:checked + label span {
+    background:url(img/check_radio_sheet.png) -20px top no-repeat;
+}
+.form-otch-connect .agreement {
+	font-weight: normal;
+	line-height: 15px;
+	font-size: 12px;
+	text-align: center;
+	color: #A0A9B2;
+}
+.form-otch-connect .recaptcha {
+	display: table;
+	margin: 0 auto;
+}
+.form-otch-connect .btn {
+	display: table;
+	margin: 0 auto;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 2px;
+	background: #F7941D;
+	padding: 8px 30px;
+	margin-top: -23px;
+	margin-bottom: 5px;
+}
+/**
+*   XS
+*/
+@media (max-width: 767px) {
+	.fancybox-skin {
+		padding: 10px !important;
+	}
+	.form-otch-connect .h2 {
+	    font-style: normal;
+	    font-weight: bold;
+	    line-height: normal;
+	    font-size: 16px;
+	    text-align: center;
+	    color: #000000;
+	    margin: 15px 0;
+	}
+	.form-otch-connect ul.form_list li .input_text {
+	    position: relative;
+	    display: table;
+	    margin: 0;
+	    width: 100%;
+	}
+	.form-otch-connect .btn {
+	    display: block;
+	    margin: 0;
+	    font-weight: 700;
+	    line-height: normal;
+	    font-size: 14px;
+	    text-align: center;
+	    text-transform: uppercase;
+	    color: #FFFFFF;
+	    border-radius: 2px;
+	    background: #F7941D;
+	    padding: 8px 30px;
+	    margin-top: -23px;
+	    margin-bottom: 5px;
+	    width: 100%;
+	}
+	.form-otch-connect .agreement {
+	    font-weight: normal;
+	    line-height: normal;
+	    font-size: 9px;
+	    text-align: center;
+	    color: #A0A9B2;
+	}
+}
+/**
+*   SM
+*/
+@media screen and (max-width: 991px) and (min-width: 768px) {
+
+}
+/**
+*   MD
+*/
+@media (max-width: 1199px) and (min-width: 992px) {
+	.form-otch-connect {
+		width: 600px;
+	}
+}
+/**
+*   LG
+*/
+@media (min-width: 1200px) {
+	.form-otch-connect {
+		width: 600px;
+	}
+}

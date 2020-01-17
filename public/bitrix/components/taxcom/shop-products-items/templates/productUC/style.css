@@ -1,0 +1,146 @@
+.list-tariff li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 47px;
+  margin-bottom: 40px;
+}
+.list-tariff li:last-child {
+  margin-right: 0;
+}
+.itemCard {
+  width: 215px;
+  height: auto;
+  background-color: #eff4f6;
+  border-radius: 2px;
+  -moz-transition: ease-out 0.25s;
+  -o-transition: ease-out 0.25s;
+  -webkit-transition: ease-out 0.25s;
+  transition: ease-out 0.25s;
+}
+.itemCard hr {
+  height: 1px;
+  border: none;
+  color: #cdcdcd;
+  background-color: #cdcdcd;
+  margin: 0px;
+}
+.itemCard .inner {
+  width: 188px;
+  display: inline-block;
+  /* float: left; */
+  margin-left: 21px;
+  margin-right: 10px;
+  margin-top: 15px;
+  vertical-align: top;
+  overflow: hidden;
+}
+.itemCard .inner:first-child {
+  height: 120px;
+}
+.itemCard .inner .direction {
+  display: inline-block;
+  font-size: 0.625em;
+  color: #717171;
+  line-height: 15px;
+  text-transform: uppercase;
+  background: url("img/icon-71.png") 0px 5px no-repeat transparent;
+  height: 27px;
+  padding-left: 30px;
+  padding-top: 0px;
+  width: 100px;
+}
+.itemCard .inner .bonus {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  float: right;
+  background: url("img/bonus_sprite.png") 0px 0px no-repeat transparent;
+  margin-top: 5px;
+}
+.itemCard .inner .bonus:hover {
+  background-position: -20px 0px;
+}
+.itemCard .inner .sub-direction {
+  font-size: 0.75em;
+  color: #4b4b4b;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 17px 0 12px;
+}
+.itemCard .inner .title {
+  font-size: 1em;
+  color: #0072bc;
+  line-height: 22px;
+  margin-bottom: 14px;
+  text-decoration: none;
+  display: block;
+}
+.itemCard .inner .text {
+  display: none;
+  font-size: 0.8125em;
+  line-height: 18px;
+  color: #404040;
+  height: 110px;
+  overflow: hidden;
+}
+.itemCard .inner .text p {
+  font-size: inherit;
+}
+.itemCard .inner .text a {
+  color: #0072bc;
+}
+.itemCard .inner .priceBlock {
+  display: block;
+  height: 60px;
+}
+.itemCard .inner .priceBlock .period {
+  display: table;
+  background: #4cbbe0;
+  border-radius: 2px 2px 0px 0px;
+  color: #ffffff;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 5px 6px 5px 7px;
+  margin: -38px 0 12px;
+}
+.itemCard .inner .priceBlock .price {
+  display: inline-block;
+  float: left;
+  font-size: 1.125em;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 14px;
+}
+.itemCard .inner .priceBlock .price .rouble {
+  font-size: 90%;
+  font-weight: 300;
+}
+
+.itemCard .inner .priceBlock .basket-sm {
+  display: inline-block;
+  float: right;
+  width: 45px;
+  height: 45px;
+  background: url(img/basket_sprite.png) 0px 0px no-repeat transparent;
+  border: none;
+  cursor: pointer;
+}
+.itemCard .inner .priceBlock .basket-sm:hover {
+  background-position: -45px 0px;
+}
+.itemCard .inner .priceBlock .basket-sm:disabled {
+  background-position: -45px 0px !important;
+}
+
+.itemCard .inner .priceBlock .basket-sm span {
+  /* display: none; */
+}
+
+@media (max-width: 768px) {
+  .list-tariff li {
+    display: table;
+    vertical-align: top;
+    margin: 0 auto 20px;
+  }
+}

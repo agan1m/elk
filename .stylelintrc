@@ -1,0 +1,13 @@
+{
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "rules": {
+    "property-no-vendor-prefix": [true, { ignoreProperties: ["/^[0-9a-zA-Z]/", /regex/, "string"] }],
+    "property-no-unknown": [true, { ignoreProperties: ["tap-highlight-color"] }]
+  },
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ]
+}

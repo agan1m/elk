@@ -1,0 +1,79 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2018,
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "strict": [2, "safe"],
+    "no-prototype-builtins": 0,
+
+    "arrow-spacing": 2,
+    "computed-property-spacing": [2, "never"],
+    "constructor-super": 2,
+    "func-call-spacing": [2, "never"],
+    "guard-for-in": 2,
+    "key-spacing": [2, { "beforeColon": false, "afterColon": true, "mode": "strict" }], 
+    "keyword-spacing": [2, { "before": true, "after": true }],
+    "newline-after-var": 2, 
+    
+    "no-debugger": 1,
+    "no-div-regex": 2,
+    "no-else-return": 2,
+    "no-empty-function": 2,
+    "no-eval": 2,
+    "no-extra-semi": 2,
+    "no-floating-decimal": 2,
+
+    "no-multi-spaces": 2,
+    "no-multiple-empty-lines": [2, { "max": 1, "maxEOF": 0, "maxBOF": 0 }],
+    "no-new": 2,
+    "no-new-func": 2,
+    "no-new-wrappers": 2,
+    "no-octal-escape": 2,
+    "no-self-compare": 2,
+    "no-template-curly-in-string": 2,
+    "no-throw-literal": 2,
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "no-undef-init": 2,
+    "no-underscore-dangle": [0],
+    "no-unused-vars": 2,
+    "no-use-before-define": 2,
+    "no-useless-return": 2,
+    "object-curly-spacing": [2, "always"],
+    "one-var": [2, {"var": "never", "let": "never", "const": "never"}],
+    "quote-props": [2, "as-needed"],
+    "quotes": [2, "single"],
+
+    "react/no-unescaped-entities": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-deprecated": 1,
+    "react/no-string-refs": 2,
+
+    "@typescript-eslint/interface-name-prefix": [2, "always"],
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/camelcase": 0
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended","plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint", "plugin:prettier/recommended"],
+  "settings": {
+    "react": {
+      "pragma": "h",
+      "version": "detect"
+    }
+  }
+}

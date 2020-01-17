@@ -1,0 +1,1430 @@
+[v-cloak] > * { display: none; }
+.master-uc {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+    padding: 110px;
+    z-index: 10;
+}
+
+.master-uc.open:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 30px;
+    border-right-width: 30px;
+    border-top: 18px solid white;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.master-uc {
+    font-size: 15px;
+}
+
+.master-uc h2 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.master-uc .h3 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: center;
+    color: #4F525A;
+    margin-bottom: 10px;
+}
+
+.master-uc b {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.master-uc .row {
+    padding: 0 0 3px 0;
+}
+
+.master-uc .label {
+    font-size: 14px;
+    color: #717171;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.master-uc input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.master-uc input[type="radio"] + label {
+    cursor: pointer;
+}
+
+.master-uc input[type="radio"]:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CBCFD3;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.master-uc input[type="radio"]:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffffff;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.master-uc input[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #1881d3;
+    border-radius: 50%;
+    background: #1881d3;
+}
+
+.master-uc input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+.master-uc input[type="radio"] + label {
+    position: relative;
+    padding: 2px 0 0 30px;
+    margin-right: 10px;
+}
+
+.master-uc input[type="radio"]:checked + label {
+    color: #1881d3;
+}
+
+.master-uc input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.master-uc input[type="checkbox"] + label {
+    cursor: pointer;
+}
+
+.master-uc input[type="checkbox"]:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CBCFD3;
+    border-radius: 20%;
+    background: #ffffff;
+}
+
+.master-uc input[type="checkbox"]:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 20%;
+    background: #ffffff;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.master-uc input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F7941D;
+    border-radius: 20%;
+    background: #F7941D;
+}
+
+.master-uc input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.master-uc input[type="checkbox"] + label {
+    position: relative;
+    padding: 2px 0 0 30px;
+    margin-right: 10px;
+}
+
+.master-uc input[type="checkbox"]:checked + label {
+    color: #1881d3;
+}
+
+/* .master-uc input[type=checkbox]:checked + label:before {
+  content: "";
+  display: inline-block;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAALCAYAAACksgdhAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDE0IDc5LjE1Njc5NywgMjAxNC8wOC8yMC0wOTo1MzowMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFDMkUzQUE0NjJGNDExRTc4MDNCRUIzOTVDOTE5MzcwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjFDMkUzQUE1NjJGNDExRTc4MDNCRUIzOTVDOTE5MzcwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MUMyRTNBQTI2MkY0MTFFNzgwM0JFQjM5NUM5MTkzNzAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MUMyRTNBQTM2MkY0MTFFNzgwM0JFQjM5NUM5MTkzNzAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6fFA6GAAAAtUlEQVR42mL8/PcfA5GAA4hdgXgzEwPxoBGINwFxJyORNpkB8TEo2wpmUwYQi+Jx1nwgZgbiXiA+xQC0KQeI/wPxFSAWBdmMhjuh8teAmAPsMiAhBtWATaMZEP+BYjOYOExSFItGDqjp/6G2wW1HDgiQn/YDsTYQX4Wyc4D4OhAbAfEPmEL00EPW+B+IQZJWYM8jAfR4eg3EjkD8BmQg1IBT6MGJLXJBGrWAeDoQ+2KLA4AAAwAHR6I5dVI+HgAAAABJRU5ErkJggg==');
+  background-position: 3px 4px;
+  background-repeat: no-repeat;
+  text-align: center;
+  line-height: 15px;
+  background-color: #1881d3;
+  border: 1px solid #1881d3;
+  box-shadow: none;
+}
+.master-uc input[type=checkbox] + label {
+  position: relative;
+  padding: 0 0 0 30px;
+  margin-right: 10px;
+}
+.master-uc input[type=checkbox] + label:before {
+    border-radius: 3px;
+}
+.master-uc input[type=checkbox] {
+  display: none;
+}
+.master-uc input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  background-color: #ffffff;
+  border: 1px solid #b8b8b8;
+  box-shadow: inset 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+  } */
+.master-uc .neob-kluch {
+}
+
+.master-uc .neob-kluch ul.list {
+}
+
+.master-uc .dop ul.list {
+    margin-bottom: 20px;
+}
+
+.master-uc ul.list li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0;
+}
+
+.master-uc .izg-sert input[type="text"] {
+    width: 460px;
+    height: 32px;
+    border: 1px solid #b5b5b5;
+    box-shadow: inset 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    padding: 0 0 0 9px;
+}
+
+.master-uc .izg-sert select.select {
+    width: 312px;
+    height: 32px;
+    border: 1px solid #b5b5b5;
+    box-shadow: inset 0 2px 4px 0px rgba(0, 0, 0, 0.3);
+    color: #000000;
+    padding: 0 0 0 9px;
+}
+
+.master-uc .izg-sert select.select option {
+}
+
+.master-uc .btn {
+}
+
+.master-uc .btn {
+    display: block;
+    border: 2px solid #00b3f5 !important;
+    border-radius: 2px !important;
+    text-transform: uppercase !important;
+    color: #ffffff !important;
+    background-color: #00b3f5 !important;
+    padding: 11px 25px;
+    margin: 27px auto 0;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.tariff_plate {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 10px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.tariff_plate:hover {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.total {
+    display: none;
+    position: relative;
+    background-color: #EFF4F6;
+    margin-top: -80px;
+    z-index: 0;
+    padding: 45px;
+    margin-bottom: 80px;
+}
+
+.preloader-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.preloader {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 45%;
+    width: 64px;
+    height: 64px;
+    background: url("img/preloader.gif") no-repeat 0px 0px transparent;
+}
+
+.itemCardUC.item:hover {
+    box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+    outline: 1px solid #F7941D;
+    outline-offset: -10px;
+}
+
+.itemCardUC.item {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 365px;
+    height: 430px;
+    padding: 22px;
+    margin: 15px 15px 15px 15px;
+    -moz-transition: ease-out 0.15s;
+    -o-transition: ease-out 0.15s;
+    -webkit-transition: ease-out 0.15s;
+    transition: ease-out 0.15s;
+}
+
+.itemCardUC.item .item-direction {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0A9B2;
+    border-bottom: 1px solid #E6EAEC;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+}
+
+.itemCardUC.item .item-name {
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 21px;
+}
+
+.itemCardUC.item .item-description {
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #4F525A;
+}
+
+.itemCardUC.item .item-description li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 13px;
+}
+
+.itemCardUC.item .item-description li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #1685CE;
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    border-radius: 50%;
+}
+
+.itemCardUC.item .item-price {
+    font-size: 26px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    margin-left: 50px;
+}
+
+.itemCardUC.item .item-basket {
+    font-weight: 700;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #F7941D;
+    padding: 8px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+.total h2 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.tariff-box {
+    display: none;
+}
+
+.tariff-box .h2 {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+    margin: 15px 0;
+}
+
+.tariff-box .tariff-box__selected {
+    display: table;
+    background: #EFF4F6;
+    border-radius: 2px;
+    padding: 17px 27px;
+    margin: 17px auto;
+}
+
+.tariff-box .tariff-box__name {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 22px;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+.tariff-box .tariff-box__price {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 20px;
+    text-align: center;
+    color: #4F525A;
+}
+
+.tariff-box .tariff-box__price .small {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 26px;
+    font-size: 13px;
+    text-align: center;
+    font-variant: small-caps;
+    color: #7B7D83;
+}
+
+.tariff-box .tariff-box__buttons {
+    display: table;
+    text-align: center;
+    width: 100%;
+}
+
+.tariff-box .tariff-box__buttons .btn {
+    border: 2px solid #F7941D;
+    border-radius: 2px;
+    background-color: #ffffff;
+    padding: 12px 27px;
+    margin: 10px 5px;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7941D;
+}
+
+.tariff-box .tariff-box__buttons .btn:hover {
+    background-color: #F7941D;
+    color: #ffffff;
+}
+
+.order-box {
+    display: none;
+    width: 500px;
+}
+
+.order-box .h2 {
+    font-style: normal;
+    font-weight: bold;
+    line-height: 46px;
+    font-size: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.order-box .h3 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.order-box input[type="text"] {
+    background: #FFFFFF;
+    border: 1px solid #CBD0D3;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 15px;
+    color: #4F525A;
+    padding: 10px 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.order-box .small {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    font-size: 13px;
+    color: #7B7D83;
+    text-align: center;
+}
+
+.order-box .order-box__additional {
+    margin-top: 27px;
+}
+
+.order-box .order-box__additional .h4 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.order-box .order-box__additional .order-box_checkbox {
+}
+
+.order-box .order-box__additional .order-box_checkbox input[type="checkbox"] {
+}
+
+.order-box .order-box__additional .order-box_checkbox label {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 15px;
+    color: #232731;
+}
+
+.order-box .order-box__buttons {
+    text-align: center;
+}
+
+.order-box .order-box__buttons .btn {
+    border: 2px solid #F7941D;
+    border-radius: 2px;
+    background-color: #F7941D;
+    padding: 12px 27px;
+    margin: 10px 15px;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.tariff-box__buttons {
+    height: 100px;
+}
+
+/* tariff-table */
+.tariff-table {
+    background-color: #F5F8FA;
+    padding: 60px 50px 50px 50px;
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+
+.tariff-table .h2 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.tariff-col-rows-name, .tariff-col {
+    float: left;
+}
+
+.tariff-col-rows-name {
+    width: 351px;
+    border-right: 1px solid #d7d7d7;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.tariff-col-rows-name div {
+    height: 55px;
+    width: 350px;
+    border-bottom: 1px solid #E6EAEC;
+    border-left: 1px solid #E6EAEC;
+    padding-top: 7px;
+    background-color: #fff;
+    color: #232731;
+    font-size: 13px;
+    line-height: 19px;
+    padding-left: 12px;
+    vertical-align: middle;
+}
+
+.tariff-col-rows-name .first {
+    height: 136px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #E6EAEC;
+}
+
+.tariff-col {
+    width: 196px;
+    background: white;
+    text-align: center;
+    position: relative;
+}
+
+.tariff-col.recommend {
+    border: 1px solid #F7941D;
+}
+
+.tariff-col .row.heading {
+    height: 136px;
+    border-top: 1px solid #d7d7d7;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.tariff-col .row.heading .btn.btn-primary {
+    border: 1px solid #F7941D;
+    background-color: #F7941D;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.tariff-col .heading__recommend {
+    position: absolute;
+    background-color: #F7941D;
+    color: #ffffff;
+    width: 197px;
+    left: -2px;
+    top: -32px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.tariff-col .row {
+    height: 55px;
+    border-bottom: 1px solid #E6EAEC;
+    border-right: 1px solid #E6EAEC;
+    display: table-cell;
+    vertical-align: middle;
+    width: 220px;
+    background: white;
+    font-size: 14px;
+    line-height: 19px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+
+.tariff-col .row.wide {
+    display: table-cell;
+    vertical-align: middle;
+    width: 220px;
+    box-sizing: border-box;
+}
+
+.tariff-col .fas {
+    font-size: 20px;
+}
+
+.tariff-col .fa-check {
+    color: rgba(22, 133, 206, 0.7);
+    ; }
+
+.tariff-col .fa-times {
+    color: #FF0000;
+}
+
+/*  */
+.tariff-plate {
+    background-color: #F5F8FA;
+}
+
+.tariff-plate .item {
+    position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 15px 15px 15px 30px;
+    margin-bottom: 15px;
+}
+
+.tariff-plate .item:before {
+    content: "";
+    background: #ffffff;
+    border-radius: 2px;
+    bottom: 0;
+    box-shadow: 0px 10px 15px rgba(33, 0, 86, 0.15);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+
+.tariff-plate .item:hover:before {
+    bottom: -7px;
+    left: -7px;
+    opacity: 1;
+    right: -7px;
+    top: -7px;
+}
+
+.tariff-plate .item:hover .item-link {
+    display: block;
+}
+
+.tariff-plate .item .item-direction {
+    position: relative;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #A0A9B2;
+    border-bottom: 1px solid #E6EAEC;
+    padding-bottom: 10px;
+    margin-bottom: 17px;
+}
+
+.tariff-plate .item .item-label {
+    position: relative;
+    font-weight: normal;
+    line-height: 23px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 9px;
+}
+
+.tariff-plate .item .item-name {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 9px;
+    text-decoration: none;
+}
+
+.tariff-plate .item .item-price {
+    position: relative;
+}
+
+.tariff-plate .item .item-link {
+    position: relative;
+}
+
+.tariff-plate .item .item-description {
+    position: relative;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #4F525A;
+}
+
+.tariff-plate .item .item-description li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    margin-left: 13px;
+}
+
+.tariff-plate .item .item-description li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #1685CE;
+    position: absolute;
+    top: 6px;
+    left: -12px;
+    border-radius: 50%;
+}
+
+.tariff-plate .item .item-price {
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+    color: #000000;
+    font-weight: 600;
+}
+
+.tariff-plate .item .item-basket {
+    border: 2px solid #1685CE;
+    background: #fff;
+    color: #1685CE;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 2px;
+    transition: ease-out 0.15s;
+    padding: 5px 27px;
+    margin-left: 123px;
+    text-decoration: none;
+    float: right;
+}
+
+.search-platforms {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cecece;
+    border-radius: 2px;
+}
+
+.showplatforms__container {
+    position: absolute;
+    display: block;
+    width: 770px;
+    top: 10px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+    z-index: 10;
+    padding: 10px;
+}
+.showplatforms__container .item {
+    padding: 5px 0;
+}
+.showplatforms__container .item a {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.showplatforms__container .item a:hover {
+    color: #0072bc;
+}
+.show-result-tariff {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: #F5F8FA;
+}
+.show-result-tariff .tariff-plate {
+    background-color: #ffffff;
+        min-height: 420px;
+        padding: 40px 25px 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        position: relative;
+}
+
+.show-result-tariff .tariff-plate .srok {
+    display: table;
+    margin: 0 auto 17px;
+    background-color: #f5f8fa;
+    padding: 12px;
+    width: 100%;
+}
+.show-result-tariff .tariff-plate > * {
+    position: relative;
+}
+.show-result-tariff .tariff-plate:before {
+    content: "";
+    background: #ffffff;
+    border-radius: 2px;
+    bottom: 0;
+    box-shadow: 0px 10px 15px rgba(33, 0, 86, 0.15);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+.show-result-tariff .tariff-plate:hover:before {
+    bottom: -7px;
+    left: -7px;
+    opacity: 1;
+    right: -7px;
+    top: -7px;
+}
+.show-result-tariff .tariff-plate .tariff-name {
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.show-result-tariff .tariff-plate .tariff-info {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 15px;
+    color: #4F525A;
+    margin-bottom: 27px;
+}
+.show-result-tariff .tariff-plate .tariff-price {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000000;
+}
+.show-result-tariff .tariff-plate .tariff-buy {
+    border: 2px solid #37BBEB;
+    color: #37BBEB;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    float: right;
+}
+.show-result-tariff .tariff-plate .tariff-buy:hover {
+    border: 2px solid #37BBEB;
+    background-color: #37BBEB;
+    color: #ffffff;
+}
+@media (max-width: 767px) {
+    .master-uc {
+        position: relative;
+        
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+        padding: 35px 15px;
+        z-index: 10;
+    }
+    .showplatforms__container {
+        position: absolute;
+        display: block;
+        width: 100%;
+        top: 10px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+        z-index: 10;
+        padding: 10px;
+    }
+
+    .tariff-plate .item .item-basket {
+        border: 2px solid #1685CE;
+        background: #fff;
+        color: #1685CE;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        border-radius: 2px;
+        transition: ease-out 0.15s;
+        padding: 5px 27px;
+        text-decoration: none;
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 17px 0;
+    }
+
+    .tariff-plate {
+        background-color: #F5F8FA;
+        padding: 60px 10px;
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    .tariff-plate .item .item-price {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .tariff-plate .item {
+        position: relative;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tariff-box__buttons {
+        height: auto;
+    }
+
+    .form-otch-connect ul.form_list li {
+        margin-bottom: 8px;
+        display: block;
+        width: 100%;
+    }
+
+    .tariff-box .tariff-box__buttons .btn {
+        border: 2px solid #F7941D;
+        border-radius: 2px;
+        background-color: #ffffff;
+        padding: 12px 0px;
+        margin: 10px 0px;
+        font-weight: 700;
+        line-height: normal;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F7941D;
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+.popular-tariffs {
+    width: 100%;
+}
+.popular-tariffs .tariff-plate {
+    background-color: #F5F8FA;
+    min-height: 420px;
+    padding: 40px 25px 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.popular-tariffs .tariff-plate > * {
+    position: relative;
+}
+.popular-tariffs .tariff-plate:before {
+    content: "";
+    background: #F5F8FA;
+    border-radius: 2px;
+    bottom: 0;
+    box-shadow: 0px 10px 15px rgba(33, 0, 86, 0.15);
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s ease;
+}
+.popular-tariffs .tariff-plate:hover:before {
+    bottom: -7px;
+    left: -7px;
+    opacity: 1;
+    right: -7px;
+    top: -7px;
+}
+.popular-tariffs .tariff-plate .lnk {
+    font-size: 15px;
+}
+.popular-tariffs .tariff-plate .tariff-name {
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.popular-tariffs .tariff-plate .tariff-info {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
+    font-size: 15px;
+    color: #4F525A;
+    margin-bottom: 27px;
+}
+.popular-tariffs .tariff-plate .tariff-price {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    font-size: 24px;
+    color: #000000;
+}
+.popular-tariffs .tariff-plate .tariff-buy {
+    border: 2px solid #37BBEB;
+    color: #37BBEB;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    float: right;
+}
+.popular-tariffs .tariff-plate .tariff-buy:hover {
+    border: 2px solid #37BBEB;
+    background-color: #37BBEB;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .master-uc {
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(11, 51, 77, 0.2);
+        padding: 35px 15px;
+        z-index: 10;
+    }
+
+    .tariff-plate {
+        background-color: #F5F8FA;
+        padding: 60px 10px;
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    .tariff-plate .item .item-price {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: center;
+        color: #000000;
+        font-weight: 600;
+    }
+
+    .tariff-plate .item {
+        position: relative;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        border-radius: 2px;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .tariff-box__buttons {
+        height: auto;
+    }
+
+    .form-otch-connect ul.form_list li {
+        margin-bottom: 8px;
+        display: block;
+        width: 100%;
+    }
+
+    .tariff-box .tariff-box__buttons .btn {
+        border: 2px solid #F7941D;
+        border-radius: 2px;
+        background-color: #ffffff;
+        padding: 12px 27px;
+        margin: 10px 5px;
+        font-weight: 700;
+        line-height: normal;
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #F7941D;
+        width: 100%;
+    }
+}
+.plt {
+
+}
+
+.plate-tariff-horiz {
+    width: 100%;
+    min-height: 110px;
+    padding: 41px 0px 0px 0px;
+    margin-bottom: 27px;
+    border-radius: 2px;
+    background-color: #F6F8F9;
+    border: 1px solid #F6F8F9;
+    position: relative;
+    -moz-transition: ease-out 0.25s;
+    -o-transition: ease-out 0.25s;
+    -webkit-transition: ease-out 0.25s;
+    transition: ease-out 0.25s;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.plate-tariff-horiz:hover {
+    border: 1px solid #0072BC;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.plate-tariff-horiz .plate-tariff-horiz__detail {
+    /* display: none; */
+    padding: 20px 15px;
+    font-size: 15px;
+    line-height: normal;
+    min-height: 100px;
+}
+.plate-tariff-horiz .plate-tariff-horiz__detail.active {
+    display: block;
+}
+.plate-tariff-horiz .plate-tariff-horiz__detail-push {
+    display: block;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 20px;
+    height: 10px;
+    background: url(bitrix/templates/ofd_new/img/svg/vector.svg) 0px 0px no-repeat transparent;
+    margin-left: 10px;
+    position: absolute;
+    top: 47px;
+    left: 10px;
+    transform: rotate( -360deg );            
+        transition: transform 150ms ease;
+}
+.plate-tariff-horiz .plate-tariff-horiz__detail-push.active {
+    transform: rotate( -180deg );
+        transition: transform 150ms ease;
+}
+.plate-tariff-horiz .plate-tariff__detail-push.active {
+    transform: rotate( -180deg );            
+        transition: transform 150ms ease;
+}
+.plate-tariff-horiz.akciya {
+    background-color: #E6F3F7;
+    border: 1px solid #E6F3F7;
+}
+.plate-tariff-horiz.akciya:hover {
+    border: 1px solid #0072BC;
+}
+.plate-tariff-horiz .plate-tariff__akciya {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-decoration: none;
+    color: #f35757;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 22px;
+}
+.plate-tariff-horiz .plate-tariff__akciya:before {
+    content: "";
+    display: inline-block;
+    background: transparent url(bitrix/templates/ofd_new/img/svg/sales.svg) 0 0 no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+
+.plate-tariff-horiz__label {
+    position: absolute;
+    font-size: 18px;
+    line-height: normal;
+    color: #f35757;
+    top: 6px;
+    left: 46px;
+}
+.plate-tariff-horiz__label:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -29px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: transparent url('bitrix/templates/ofd_new/img/svg/sales.svg') 0 0 no-repeat;
+}
+.plate-tariff-horiz .plate-tariff-horiz__name {
+    display: inline-block;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 600;
+    color: #0072BC;
+}
+.plate-tariff-horiz .plate-tariff-horiz__price {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+.plate-tariff-horiz .btn {
+    border: 1px solid #0072BC !important;
+    background-color: #fff !important;
+    color: #0072BC !important;
+    padding: 13px 5px !important;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.plate-tariff-horiz .btn:hover {
+    border: 1px solid #0072BC !important;
+    background-color: #0072BC !important;
+    color: #ffffff !important;
+    padding: 13px 5px !important;
+}
+@media (max-width: 767px) {
+    .plate-tariff-horiz {
+        padding: 30px 0px 20px 0px;
+    }
+    
+    .plate-tariff-horiz .plate-tariff-horiz__name {
+        margin: 10px 0;
+    }
+    .plate-tariff-horiz .btn {
+        display: block;
+        margin: 10px 10px !important;
+    }
+    .plate-tariff-horiz {
+        height: auto;
+    }
+    
+}
+
+.srok {
+    display: table;
+    margin: 0 auto 17px;
+    
+}
+.srok .srok-txt {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    font-size: 14px;
+    text-align: center;
+    color: #A0A9B2;
+    margin-bottom: 10px;
+}
+.srok .btn.period.active {
+    background: #fff !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.srok .btn {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1685CE;
+    background-color: transparent !important;
+}
+.srok .btn:hover {
+    color: #1685CE;
+}
+
+.cripto.hide-plates {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 310px;
+}
+.cripto.show-plates {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+.other-tariffs {
+    position: relative;
+    font-size: 20px;
+    line-height: normal;
+    border-bottom: 1px dashed #000000;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none !important;
+    display: table;
+    margin: 0 auto;
+    color: #000000 !important;
+}
+.other-tariffs:after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: -27px;
+    display: block;
+    width: 20px;
+    height: 10px;
+    background: url(bitrix/templates/ofd_new/img/svg/vector.svg) 0px 0px no-repeat transparent;
+}
+
+
+.other-tariffs.active:after {
+    transform: rotate( -180deg );
+        transition: transform 150ms ease;
+}
+
+@media (max-width: 767px) {
+    .tariff-plate {
+        min-height: 435px !important;
+    }
+    .tariff-plate .btn.btn-sm {
+        padding: 3px 7px;
+    }
+    .tariff-plate .tariff-price {
+        font-size: 22px;
+    }
+    .tariff-plate .tariff-buy {
+        padding: 10px 16px;
+    }
+}

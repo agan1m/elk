@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "paths": { "*": ["types/*"] },
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "target": "esnext",
+    "allowJs": false,
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ]
+  },
+  "exclude": ["node_modules", "dist"],
+  "types": ["typePatches"]
+}

@@ -1,0 +1,15 @@
+.region-container {
+  float: left;
+}
+.region-container i {
+  color: #8bc2e7;
+}
+.region-container .region_link {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 15px;
+  font-size: 13px;
+  color: #636363;
+  border-bottom: 1px dashed #009ee3;
+  text-decoration: none;
+}
